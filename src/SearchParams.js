@@ -27,7 +27,7 @@ const SearchParams = () => {
     pet.breeds(animal).then(({ breeds }) => {
       const breed = breeds.map(({ name }) => name);
       setBreeds(breed);
-    }, console.error);
+    });
   }, [animal, setBreed, setBreeds]);
 
   return (
